@@ -1,4 +1,4 @@
-import Banner from "../../components/Banner/banner";
+import Banner from "../../components/banner/banner";
 import './home.scss';
 import Cart from '../../components/cart/cart';
 

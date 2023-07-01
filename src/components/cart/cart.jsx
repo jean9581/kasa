@@ -1,28 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import './cart.scss';
-import CartItem from './cartItem';
-
-
+import "./cart.scss";
+import data from "../../data/logement.json";
+import { Link } from "react-router-dom";
 
 function Cart() {
-  const [logements,setLogements] = useState ([]);
-
-  useEffect(fetchLogements, []);
-
-  function fetchLogements(){
-    fetch("logements.json")
-    .then((res) => res.json()) 
-    .then((res) => setLogements(res)) 
-    .catch(console.error);
-
-  }
-  
-
   return (
     <>
-      <div className="cart"> 
-        {logements.map((logement)=>(
-          <CartItem title={logement.title} imgUrl= {logement.cover} id = {logement.id} />
+      <div className="cart">
+        {data.map((logement) => (
+          <Link key={logement.id} to={`/logement/${logement.id}`}>
+            <div className="cartItem">
+              <div className="cartItem_img" style={{ backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), 
+                            url(${logement.cover})`}} >
+                  <p className="cartItem_title">{logement.title}</p>
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
     </>
