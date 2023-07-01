@@ -22,7 +22,7 @@ function Cart() {
     <>
       <div className="cart"> 
         {logements.map((logement)=>(
-          <CartItem title={logement.title} imgUrl= {logement.cover} />
+          <CartItem title={logement.title} imgUrl= {logement.cover} id = {logement.id} />
         ))}
       </div>
     </>
