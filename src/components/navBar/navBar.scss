@@ -1,0 +1,40 @@
+@import '../../styles/global.scss';
+
+
+.logo_navbar{
+    margin-right: auto;
+    }
+
+.navbar{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 20px;
+    & a{
+        text-decoration: none;
+        color:$fristColor;
+        margin-left: 5%;
+        &:hover{
+            text-decoration: underline;
+        }
+        &.active{
+            text-decoration: underline;
+            font-style: italic;
+            color: $colorLink;
+        }
+    }
+    
+}
+
+
+
+
+@media (max-width: 480px) {
+    img {
+        width: 150px;
+    }
+    .navbar
+    {
+        font-size: 75%;
+    }
+}
