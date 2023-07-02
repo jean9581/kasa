@@ -11,34 +11,32 @@
     flex-wrap: wrap;
     gap: 3rem;
     padding: 3rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
 .cartItem{
-    //background: linear-gradient($fristColor, $secondColor);
+    text-decoration:none;
     border-radius: 1rem;
-    display: grid;
-    align-items: end;
-    min-width: 200px;
-    min-height: 200px;
-    background-size: cover;
-    &.img{
+    width: 300px;
+    height: 300px;
+    
+    &_img{
+        //object-fit: cover;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        background-size: cover;
+        background-position: center;
         border-radius: 1rem;
+        display: grid;
+        align-items:end;
     }
     &_title{
-        position: relative;
-        width: 50%;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
+        margin-inline: 1rem;
         color: rgb(255, 255, 255);
     }
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .cart {
         justify-content: center;
         background-color: white;

@@ -1,3 +1,4 @@
+import '../styles/global.scss'
 
 import NavBar from '../components/navBar/navBar'
 import Footer from '../components/footer/footer'
@@ -7,8 +8,10 @@ import { Outlet } from 'react-router-dom';
 function layout() {
   return (
     <>
-    <NavBar/>
-    <Outlet/>
+    <div className='layout'>
+      <NavBar/>
+      <Outlet/>
+    </div>
     <Footer />
     </>
   );

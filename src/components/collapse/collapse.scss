@@ -1,0 +1,25 @@
+@import '../../styles/global.scss';
+
+.collapse{
+    &_title{
+        background-color: $fristColor;
+        color: white;
+        border-radius: 0.3rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        & i{
+            font-size: 150%;
+            cursor: pointer;
+        }
+    }
+    &_content{
+        position: relative;
+        top:-1.5rem;
+        z-index: -1;
+        background-color: $grey;
+        color: $fristColor;
+        padding: 1.5rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+}

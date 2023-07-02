@@ -3,13 +3,22 @@
 
 .logo_navbar{
     margin-right: auto;
+
     }
 
 .navbar{
     display: flex;
     align-items: center;
     font-weight: 600;
+    font-size: 80%;
     margin-top: 20px;
+    & img{
+        height: 40px;
+    }
+    @media (max-width: 480px) {
+        img {
+            height: 30px;
+    }}
     & a{
         text-decoration: none;
         color:$fristColor;
@@ -23,16 +32,18 @@
             color: $colorLink;
         }
     }
-    
+    @media (max-width: 480px) {
+        .navbar
+        {
+            font-size: 75%;
+        }
+    }
 }
 
 
 
 
 @media (max-width: 480px) {
-    img {
-        width: 150px;
-    }
     .navbar
     {
         font-size: 75%;

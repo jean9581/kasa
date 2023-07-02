@@ -1,0 +1,30 @@
+@import '../../styles/global.scss';
+
+.logement{
+    &_description{
+        display: flex;
+        gap: 5%;
+    }
+    &_head{
+        display: flex;
+        margin-top: 3%;
+        &_title{
+            flex-grow: 1;
+            & h1,
+            h2{
+               color: $fristColor;
+               
+            }
+            & h1{
+                font-size: 130%;
+                margin: 0;
+            }
+            h2{
+                font-size: 80%;
+                margin-top: 1%;
+                margin-bottom: 2%; 
+            }
+            
+        }
+    }
+}
