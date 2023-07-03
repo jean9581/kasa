@@ -1,43 +1,36 @@
 
 .banner{
     position: relative;
-    margin-top: 5%;
-    min-height: 140px;
+    margin-top: 3%;
+    min-height: 170px;
     border-radius: 1rem;
     background-color: black;
-    display: flex;
-    justify-content: center;
-}
-
-.banner::after{
-    content: "";
-    position: absolute;
-    inset : 0;
-    opacity: 0.7;
-    background-image: url('../../assets/font.png');
-    background-position: center;
-    background-size: cover;
-    border-radius: 1rem;
-    z-index: 1;
-}
-.text{
-    position: relative;
-    font-size: 200%;
-    color: white;
-    margin-top: auto;
-    margin-bottom: auto;
-    z-index: 2;
-}
-
-@media (max-width: 480px) {
-    .banner {
-        min-height: 100px;
+    @media (max-width: 480px) {
+            //min-height: 170px;
     }
-    .text
-    {
-        font-size: 150%;
-        padding-left: 0.5rem;
-        padding-right: 5rem;
+    &_img{
+        position: absolute;
+        inset : 0;
+        opacity: 0.8;
+        background-position: center;
+        background-size: cover;
+        border-radius: 1rem;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+    }
+    &_text{
+        position: relative;
+        font-size: 200%;
+        color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+        z-index: 2;
+        @media (max-width: 480px) {
+                font-size: 150%;
+                padding-left: 0.5rem;
+                padding-right: 5rem;
+        }
     }
 }
 

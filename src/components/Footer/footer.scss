@@ -1,13 +1,19 @@
 .footer{
+    position: absolute;
     background-color: black;
     color: white;
-    min-height: 150px;
     text-align: center;
-    padding: 1rem;
-}
-.footer_logo{
-    padding: 2rem;
-}
-.footer_text{
-    padding-bottom: 2rem;
+    //bottom: 0;
+    width: 100%;
+    &_logo{
+        padding: 2rem 0 1rem 0;
+
+        & img{
+            height: 30px;
+        }
+    }
+    &_text{
+        padding-bottom: 1rem;
+        font-size: 80%;
+    }
 }

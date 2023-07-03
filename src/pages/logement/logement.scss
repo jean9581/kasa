@@ -4,10 +4,17 @@
     &_description{
         display: flex;
         gap: 5%;
+        margin-top: 1rem;
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
     }
     &_head{
         display: flex;
         margin-top: 3%;
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
         &_title{
             flex-grow: 1;
             & h1,
@@ -18,11 +25,12 @@
             & h1{
                 font-size: 130%;
                 margin: 0;
+                margin-bottom: 0.5rem;
             }
             h2{
                 font-size: 80%;
                 margin-top: 1%;
-                margin-bottom: 2%; 
+                margin-bottom: 4%; 
             }
             
         }

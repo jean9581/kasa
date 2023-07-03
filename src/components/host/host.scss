@@ -2,11 +2,24 @@
 
 
 .host{
+    @media (max-width: 480px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    margin-top: 2%;
     &_badge{
+        @media (max-width: 480px) {
+            order: 1;
+        }
         display: flex;
         gap: 0.5rem;
+        align-items: center;
         &_name{
             margin-top: 0.3rem;
+            @media (max-width: 480px) {
+                margin-top: 0;
+            }
         }
         & p{
             margin: 0;
@@ -19,11 +32,18 @@
             border-radius: 50%;
             background-size: cover;
             background-position: center;
+            @media (max-width: 480px) {
+                height: 40px;
+                width: 40px;
+            }
         }
     }
 
     &_rating{
         color: $fristColor;
-        font-size: 200%; 
+        font-size: 180%; 
+        @media (max-width: 480px) {
+            font-size: 100%;
+        }
     }
 }
