@@ -1,7 +1,7 @@
 import './carousel.scss'
 import { useState } from "react";
-import leftArrow from "../../assets/left-arrow-backup-2-svgrepo-com.svg";
-import rightArrow from "../../assets/right-arrow-backup-2-svgrepo-com.svg";
+import next from '../../assets/arrowNext.svg'
+import prev from '../../assets/arrowPreview.svg'
 
 function Carousel({content , id}) {
   const [current, setCurrent] = useState(0);
@@ -22,33 +22,23 @@ function Carousel({content , id}) {
     <div className='carousel'>
       {content.map((picture, index) => (
         <>
-          <div
-            className={
-              index === current ? "carousel_active" : "carousel_inactive"}
-          >
+          <div className={index === current ? "carousel_active" : "carousel_inactive"}>
             {index === current && (
               <div  className="carousel_img"
                     key={index}
-                    style={{ backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), 
+                    style={{ backgroundImage: ` 
                     url(${picture})`}} >
                 <p className="carousel_conter" key={index + 2}> {index +1} / {length}</p>
               </div>
             )}
+            
           </div>
         </>
       ))}
       {length > 1 ? (
         <div className='carousel_nav'>
-            <div  className="carousel_nav_previous" 
-                  onClick={prevImg}
-                  style={{ backgroundImage: `url(${leftArrow})`}}
-            >
-            </div>
-            <div  className="carousel_nav_next" 
-                  onClick={nextImg}
-                  style={{ backgroundImage: `url(${rightArrow})`}}
-            >
-            </div>
+          <img src={prev} alt="" onClick={prevImg}/>
+          <img src={next} alt="" onClick={nextImg}/>
         </div>
       ) : null}
     </div> 

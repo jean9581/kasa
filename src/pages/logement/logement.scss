@@ -3,11 +3,20 @@
 .logement{
     &_description{
         display: flex;
+        justify-content: space-between;
         gap: 5%;
         margin-top: 1rem;
+        margin-bottom: 8rem;
         @media (max-width: 480px) {
             flex-direction: column;
         }
+        &_collapse{
+            width: 50%;
+            @media (max-width: 480px) {
+            width: 100%;
+            }
+        }
+        
     }
     &_head{
         display: flex;

@@ -1,7 +1,9 @@
 .about{
     &_collapse{
+        display: flex;
+        flex-direction: column;
         margin-top: 2rem;
-        padding-inline: 4rem; 
+        //padding-inline: 4rem; 
         
         @media (max-width: 480px) {
             padding-inline: 0;

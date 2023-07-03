@@ -49,8 +49,12 @@ function Logement() {
               <Host info={logement.host} rat={logement.rating} />
             </div>
             <div className="logement_description">
-              <Collapse title="Description" content={logement.description} />
-              <Collapse title="Equipements" content={logement.equipments} />
+              <div className="logement_description_collapse">
+                <Collapse title="Description" content={logement.description} />
+              </div>
+              <div className="logement_description_collapse">
+                <Collapse title="Equipements" content={logement.equipments} />
+              </div>
             </div>
             
         </div>

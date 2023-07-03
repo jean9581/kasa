@@ -11,9 +11,8 @@
         background-size: cover;
         background-position: center;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        display: grid;
-        justify-content: center;
-        align-content: end;
+        display: flex;
+        flex-direction: column-reverse;
     }
     &_active{
         width: 100%;
@@ -27,22 +26,27 @@
     }
     &_nav{
         position: absolute;
-        top: 0;
-        height: 100%;
+        top: 30%;
         width: 100%;
-        color: rgb(255, 0, 0);
-        &_previous,
-        &_next{
-            
-        background-position: center;
+        color: rgb(255, 255, 255);
+        height: 40%;
+        display: flex;
+        justify-content: space-between;
+        & img{
+            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));;
+            &:hover{
+                cursor: pointer;
+            }
         }
+        @media (max-width: 480px) {
+            height: 30%;
+        }
+
     }
-    
-    
     &_conter{
         position: relative;
-        z-index: 20;
         color: white;
+        text-align: center;
     }
     
 }

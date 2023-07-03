@@ -1,4 +1,5 @@
 import './host.scss'
+import Stars from '../stars/stars'
 
 function Host({info, rat}) {
     const completName = info.name.split(" ");
@@ -18,11 +19,7 @@ function Host({info, rat}) {
                 </div> 
             </div>
             <div className='host_rating'>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span> 
+                <Stars rating = {rat}/>
             </div>
         </div>
     </>
