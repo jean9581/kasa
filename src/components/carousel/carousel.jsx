@@ -28,7 +28,7 @@ function Carousel({content , id}) {
                     key={index}
                     style={{ backgroundImage: ` 
                     url(${picture})`}} >
-                <p className="carousel_conter" key={index + 2}> {index +1} / {length}</p>
+                <p className="carousel_conter"> {index +1} / {length}</p>
               </div>
             )}
             

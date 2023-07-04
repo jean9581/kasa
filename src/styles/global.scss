@@ -8,5 +8,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .layout{
-    margin-inline: 1rem;
+    &_hautPage{
+      margin-inline: 1rem;  
+    }
+    
 }

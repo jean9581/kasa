@@ -12,7 +12,7 @@ function Collapse({ title, content}) {
         <div className={isShow ? "collapse collapse_up" : "collapse collapse_down"}>
           <span className="collapse_title">
             {title}
-            <i className={isShow ? "fas fa-chevron-up" : "fas fa-chevron-down"} onClick={showContent}></i>
+            <i className={isShow ? "fas fa-chevron-down" : "fas fa-chevron-up"} onClick={showContent}></i>
           </span>
           <p className={isShow ? "collapse_content up" : "collapse_content down"}>{content}</p>
         </div>

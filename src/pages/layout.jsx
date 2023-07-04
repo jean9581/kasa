@@ -9,10 +9,13 @@ function layout() {
   return (
     <>
     <div className='layout'>
-      <NavBar/>
-      <Outlet/>
+      <div className='layout_hautPage'>
+        <NavBar/>
+        <Outlet/>
+      </div>
+      <Footer />
     </div>
-    <Footer />
+    
     </>
   );
 }
