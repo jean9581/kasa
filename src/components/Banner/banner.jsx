@@ -1,13 +1,16 @@
 import './banner.scss'
 
-function Banner({title , image}) {
+function Banner({title , image, nameOfClasse}) {
+
   return (
   <>
-    <div className='banner'>
-      <div  className="banner_img"
-            style={{ backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), 
+    <div className={nameOfClasse}>
+      <div  className='banner_img'
+            style={{ backgroundImage: `linear-gradient(180deg, rgba(140, 140, 140, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), 
             url(${image})`}} >
-            <p className='banner_text'>{title}</p>
+            <div className='banner_text'>
+                    <p>{title}</p>
+            </div>
       </div>
     </div>
   </>

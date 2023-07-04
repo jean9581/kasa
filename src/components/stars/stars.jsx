@@ -8,7 +8,7 @@ function Stars({rating}) {
         <div className="star">
             {stars.map((index) =>
                 rating >= index ? (
-                    <i className="fas fa-star star_full" key={index}></i>) : ( <i className="fas fa-star star_empty"></i>)
+                    <i className="fas fa-star star_full" key={index}></i>) : ( <i className="fas fa-star star_empty" key={index}></i>)
             )}
         </div>
      

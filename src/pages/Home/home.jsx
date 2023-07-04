@@ -7,7 +7,10 @@ function Home() {
   return (
     <>
     <div className="home">
-    <Banner title = "Chez vous, partout et ailleurs" image = {imgBanner}/>
+      <div className="home_banner">
+        <Banner title = "Chez vous, partout et ailleurs" image = {imgBanner} nameOfClasse = "banner bannerHome"/>
+      </div>
+    
     <Cart />
     </div>
       

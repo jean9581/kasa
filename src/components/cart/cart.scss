@@ -9,8 +9,8 @@
     border-radius: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
-    padding: 3rem;
+    gap: 1rem;
+    padding: 1rem;
     justify-content: space-evenly;
 }
 .cartItem{
@@ -18,7 +18,9 @@
     border-radius: 1rem;
     width: 200px;
     height: 200px;
-    
+    @media (max-width: 480px) {
+            width: 100%;
+    }
     &_img{
         //object-fit: cover;
         width: 100%;
@@ -37,7 +39,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .cart {
         justify-content: center;
         background-color: white;

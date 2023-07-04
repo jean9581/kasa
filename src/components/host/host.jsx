@@ -26,4 +26,4 @@ function Host({info, rat}) {
      
     )
   }
-  export default Host
+  export default Host 

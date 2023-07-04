@@ -13,10 +13,7 @@ function Carousel({content , id}) {
 
   const prevImg = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-
-  console.log("voyons",current)
-  
+  }; 
 
   return (
     <div className='carousel'>

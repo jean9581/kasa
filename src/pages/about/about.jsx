@@ -7,7 +7,7 @@ function About() {
   return (
     <>
     <div className="about">
-      <Banner title ="" image= {imgBanner}/>
+      <Banner title ="" image= {imgBanner} nameOfClasse = "banner bannerAbout"/>
       <div className='about_collapse'>
         <Collapse title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
         <Collapse title="Respect" content="La biencéance fait partie des valeurs fondatrices de kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre platforme."/>
