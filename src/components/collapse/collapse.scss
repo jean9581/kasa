@@ -10,7 +10,7 @@
         max-height: 500px;
         transition: max-height 0s ease-in;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
         width: 100%;
     }
     &_title{
@@ -21,16 +21,25 @@
         margin: 0;
         display: flex;
         justify-content: space-between;
-        font-size: 80%;
-        @media (max-width: 480px) {
+        font-size: 24px;
+        
+        cursor: pointer;
+        @media (max-width: 600px) {
             padding: 0.5rem;
-            font-size: 70%;
+            font-size: 13px;
+            height: 20px;
+        }
+        & p{
+            margin: 0;
         }
         & i{
-            font-size: 150%;
-            cursor: pointer;
+            font-size: 32px;
+            @media (max-width: 600px) {
+                font-size: 18px;
+            }
         }
     }
+    &_list ,
     &_content{
         position: relative;
         top:-1.5rem;
@@ -40,7 +49,15 @@
         padding: 1.5rem;
         border-radius: 0 0 1rem 1rem;
         margin-top: 1rem;
-        font-size: 80%;
+        font-size: 18px;
+        @media (max-width: 600px) {
+            font-size: 12px;
+        }
+    }
+    &_equipement{
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
     
 }

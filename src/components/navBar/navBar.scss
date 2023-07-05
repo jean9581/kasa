@@ -9,37 +9,34 @@
 .navbar{
     display: flex;
     align-items: center;
-    font-weight: 600;
-    font-size: 80%;
+    font-weight: 2400;
+    font-size: 20px;
     margin-top: 15px;
-    & img{
-        height: 40px;
+    @media (max-width: 600px) {
+            font-size: 13px;
     }
-    @media (max-width: 480px) {
+    & img{
+        height: 68px;
+    }
+    @media (max-width: 600px) {
         img {
-            height: 30px;
+            height: 47px;
     }}
     & a{
         text-decoration: none;
         color:$fristColor;
         margin-left: 5%;
-        font-size: 100%;
-        @media (max-width: 480px) {
-            font-size: 80%;
+        font-size: 120%;
+        @media (max-width: 600px) {
+            font-size: 100%;
         }
         &:hover{
             text-decoration: underline;
         }
         &.active{
             text-decoration: underline;
-            font-style: italic;
             color: $colorLink;
         }
     }
-    @media (max-width: 480px) {
-        .navbar
-        {
-            font-size: 75%;
-        }
-    }
+    
 }

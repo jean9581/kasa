@@ -1,15 +1,17 @@
-$fristColor : #FF6060;
-$secondColor : #472222;
-$colorLink : #ff6060af;
-$grey :#F6F6F6;
+$fristColor: #ff6060;
+$secondColor: #472222;
+$colorLink: #ff6060af;
+$grey: #f6f6f6;
 
 body {
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
-.layout{
-    &_hautPage{
-      margin-inline: 1rem;  
-    }
-    
+.layout {
+  min-height:100vh;
+  &_hautPage {
+    margin-inline: 1rem;
+  }
 }

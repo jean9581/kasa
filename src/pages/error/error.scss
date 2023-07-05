@@ -9,12 +9,12 @@
         display: flex;
         justify-content: center;
         margin-top: 3rem;
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             margin-top: 7rem;
         }
         & img{
             height: 130px;
-            @media (max-width: 480px) {
+            @media (max-width: 600px) {
                 height: 90px;
             }
         }
@@ -29,10 +29,10 @@
         text-decoration: none;
         color:$fristColor;
         text-align: center;
-        font-size: 60%;
+        font-size: 12px;
         margin-top: 4rem;
         margin-bottom: 4rem;
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             margin-top: 10rem;
         }
         &:hover{

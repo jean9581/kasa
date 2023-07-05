@@ -2,22 +2,22 @@
 
 
 .host{
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     margin-top: 2%;
     &_badge{
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             order: 1;
         }
         display: flex;
         gap: 0.5rem;
-        align-items: center;
+        align-content: center;
         &_name{
-            margin-top: 0.3rem;
-            @media (max-width: 480px) {
+            margin: auto 5px auto auto;
+            @media (max-width: 600px) {
                 margin-top: 0;
             }
         }
@@ -25,26 +25,31 @@
             margin: 0;
             color: $fristColor;
             text-align: end;
-            font-size: 80%;
+            font-size: 18px;
+            @media (max-width: 600px) {
+                font-size: 12px;
+            }
             }
         &_img{
-            height: 50px;
-            width: 50px;
+            height: 60px;
+            width: 60px;
             border-radius: 50%;
             background-size: cover;
             background-position: center;
-            @media (max-width: 480px) {
-                height: 40px;
-                width: 40px;
+            @media (max-width: 600px) {
+                height: 30px;
+                width: 30px;
             }
         }
     }
 
     &_rating{
         color: $fristColor;
-        font-size: 180%; 
-        @media (max-width: 480px) {
-            font-size: 100%;
+        font-size: 30px;
+        display: flex;
+        gap: 1rem; 
+        @media (max-width: 600px) {
+            font-size: 18px;
         }
     }
 }

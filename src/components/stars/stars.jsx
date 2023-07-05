@@ -6,12 +6,15 @@ function Stars({rating}) {
 
     return (
         <div className="star">
-            {stars.map((index) =>
+
+            {stars.map((index) => 
                 rating >= index ? (
-                    <i className="fas fa-star star_full" key={index}></i>) : ( <i className="fas fa-star star_empty" key={index}></i>)
+                    <i className="fas fa-star star_full" key={index}></i>
+                    ) : (
+                    <i className="fas fa-star star_empty" key={index}></i>)
             )}
+
         </div>
-     
     )
 }
 export default Stars

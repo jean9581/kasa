@@ -1,8 +1,11 @@
 .carousel{
     margin-top: 3%;
     position: relative;
-    height: 18rem;
+    height: 415px;
     width: 100%;
+    @media (max-width: 600px) {
+        height: 215px;
+    }
     &_img{
         position: absolute;
         border-radius: 1rem; 
@@ -32,12 +35,11 @@
         display: flex;
         justify-content: space-between;
         & img{
-            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));;
             &:hover{
                 cursor: pointer;
             }
         }
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             height: 30%;
         }
 

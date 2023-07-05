@@ -7,11 +7,13 @@ function Home() {
   return (
     <>
     <div className="home">
-      <div className="home_banner">
-        <Banner title = "Chez vous, partout et ailleurs" image = {imgBanner} nameOfClasse = "banner bannerHome"/>
-      </div>
-    
-    <Cart />
+
+        <div className="home_banner">
+          <Banner title = "Chez vous, partout et ailleurs" image = {imgBanner} nameOfClasse = "banner bannerHome"/>
+        </div>
+      
+        <Cart />
+        
     </div>
       
     </>

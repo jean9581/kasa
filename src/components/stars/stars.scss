@@ -1,14 +1,15 @@
 @import '../../styles/global.scss';
 
 .star{
+    width: 200px;
     &_full,
     &_empty{
-        font-size: 80%;
-        //margin-inline: 0.5rem;
+        font-size: 26px;
+        margin-right: 10px;
+        @media (max-width: 600px) {
+            font-size: 12px;
+        }
     }
-}
-.star_full{
-
 }
 .star_empty{
     color: $grey;
